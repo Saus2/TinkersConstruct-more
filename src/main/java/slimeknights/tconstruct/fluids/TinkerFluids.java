@@ -168,6 +168,7 @@ public final class TinkerFluids extends TinkerModule {
 
   // compat ores
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenTin      = FLUIDS.register("molten_tin").type(hot("molten_tin").temperature(525).lightLevel(12)).block(createBurning(MapColor.COLOR_CYAN, 12, 10, 5f)).bucket().commonTag().flowing();
+  public static final FlowingFluidObject<ForgeFlowingFluid> moltenEmerald  = FLUIDS.register("molten_karmesine").type(hot("molten_karmesine").temperature(1400).lightLevel(15)).block(createBurning(MapColor.RAW_IRON, 9, 10, 6f)).bucket().flowing();
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenAluminum = FLUIDS.register("molten_aluminum").type(hot("molten_aluminum").temperature(725).lightLevel(12)).block(createBurning(MapColor.METAL, 12, 10, 5f)).bucket().commonTag().flowing();
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenLead     = FLUIDS.register("molten_lead").type(hot("molten_lead").temperature(630).lightLevel(12)).block(createBurning(MapColor.TERRACOTTA_BLUE, 12, 10, 5f)).bucket().commonTag().flowing();
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenSilver   = FLUIDS.register("molten_silver").type(hot("molten_silver").temperature(1090).lightLevel(12)).block(createBurning(MapColor.METAL, 12, 10, 5f)).bucket().commonTag().flowing();
@@ -404,6 +405,7 @@ public final class TinkerFluids extends TinkerModule {
     output.accept(moltenEmerald);
     output.accept(moltenQuartz);
     output.accept(moltenAmethyst);
+    output.accept(moltenKarmesine);
     output.accept(moltenDiamond);
     output.accept(moltenDebris);
     // metal ores
